@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpTiming;
     [SerializeField] private float initialJumpDelay;
+    public Animator animator;
     private Vector2 movement = new Vector2();
-    private bool isGrounded;
     private int playerHealth = 3;
     private Rigidbody2D rb;
 
@@ -22,6 +22,16 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(movement.x));
+
+        if (rb.velocity.x < 0)
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
     private void FixedUpdate()
@@ -32,6 +42,11 @@ public class PlayerController : MonoBehaviour
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+    }
+
+    private void Flip()
+    {
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
