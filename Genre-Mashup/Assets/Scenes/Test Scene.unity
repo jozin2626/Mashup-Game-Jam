@@ -218,7 +218,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 343746318}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ba753d4367d974749bb56739367047a3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -239,6 +239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 5
   jumpForce: 5
+  jumpTiming: 4
+  initialJumpDelay: 2
 --- !u!50 &343746323
 Rigidbody2D:
   serializedVersion: 4

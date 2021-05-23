@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float playerSpeed;
     [SerializeField] private float jumpForce;
+    [SerializeField] private float jumpTiming;
+    [SerializeField] private float initialJumpDelay;
     private Vector2 movement = new Vector2();
     private bool isGrounded;
     private int playerHealth = 3;
@@ -14,7 +16,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        InvokeRepeating("Jump", 0f, 4f);
+        InvokeRepeating("Jump", initialJumpDelay, jumpTiming);
     }
 
     private void Update()
