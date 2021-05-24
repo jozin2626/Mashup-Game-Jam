@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpTiming;
     [SerializeField] private float initialJumpDelay;
+    public Animator animator;
     private Vector2 movement = new Vector2();
-    private bool isGrounded;
     private int playerHealth = 3;
     private Rigidbody2D rb;
 
@@ -22,6 +22,15 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(movement.x));
+        animator.SetFloat("Movement", Input.GetAxisRaw("Horizontal"));
+
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1)
+        {
+            animator.SetFloat("LastMovement", Input.GetAxisRaw("Horizontal"));
+        }
+
+        
     }
 
     private void FixedUpdate()
@@ -31,6 +40,8 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        animator.SetBool("Grounded", false);
+        animator.SetBool("Jump", true);
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
 
@@ -42,6 +53,12 @@ public class PlayerController : MonoBehaviour
             {
                 playerHealth--;
             }
+        }
+
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("Grounded", true);
         }
     }
 }
