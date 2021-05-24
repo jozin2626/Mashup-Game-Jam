@@ -242,7 +242,7 @@ MonoBehaviour:
   jumpForce: 6
   jumpTiming: 4
   initialJumpDelay: 2
-  animator: {fileID: 0}
+  animator: {fileID: 343746324}
 --- !u!50 &343746323
 Rigidbody2D:
   serializedVersion: 4
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 2141448146}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
