@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (gameObject.CompareTag("Platform"))
+        if (collision.gameObject.CompareTag("Platform"))
         {
             animator.SetBool("Jump", false);
             animator.SetBool("Grounded", true);
