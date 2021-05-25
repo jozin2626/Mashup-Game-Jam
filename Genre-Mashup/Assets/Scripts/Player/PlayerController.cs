@@ -11,11 +11,16 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private Vector2 movement = new Vector2();
     private int playerHealth = 3;
+    private bool isGrounded;
     private Rigidbody2D rb;
+    private CircleCollider2D floorCollider;
+    private BoxCollider2D ceilingCollider;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        floorCollider = GetComponent<CircleCollider2D>();
+        ceilingCollider = GetComponent<BoxCollider2D>();
         InvokeRepeating("Jump", initialJumpDelay, jumpTiming);
     }
 
@@ -23,15 +28,23 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(movement.x));
+        animator.SetFloat("Movement", Input.GetAxisRaw("Horizontal"));
 
-        if (rb.velocity.x < 0)
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1)
         {
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
+            animator.SetFloat("LastMovement", Input.GetAxisRaw("Horizontal"));
         }
-        else
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            animator.SetBool("Attack", true);
+            Invoke("StopAttack", 0.4f);
         }
+    }
+
+    private void StopAttack()
+    {
+        animator.SetBool("Attack", false);
     }
 
     private void FixedUpdate()
@@ -41,12 +54,11 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        animator.SetBool("Grounded", false);
+        animator.SetBool("Jump", true);
+        animator.SetBool("Attack", false);
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-    }
-
-    private void Flip()
-    {
-
+        isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -57,6 +69,13 @@ public class PlayerController : MonoBehaviour
             {
                 playerHealth--;
             }
+        }
+
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("Grounded", true);
+            isGrounded = true;
         }
     }
 }
