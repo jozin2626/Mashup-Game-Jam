@@ -11,11 +11,16 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private Vector2 movement = new Vector2();
     private int playerHealth = 3;
+    private bool isGrounded;
     private Rigidbody2D rb;
+    private CircleCollider2D floorCollider;
+    private BoxCollider2D ceilingCollider;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        floorCollider = GetComponent<CircleCollider2D>();
+        ceilingCollider = GetComponent<BoxCollider2D>();
         InvokeRepeating("Jump", initialJumpDelay, jumpTiming);
     }
 
@@ -30,7 +35,16 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("LastMovement", Input.GetAxisRaw("Horizontal"));
         }
 
-        
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+        {
+            animator.SetBool("Attack", true);
+            Invoke("StopAttack", 0.4f);
+        }
+    }
+
+    private void StopAttack()
+    {
+        animator.SetBool("Attack", false);
     }
 
     private void FixedUpdate()
@@ -42,7 +56,9 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("Grounded", false);
         animator.SetBool("Jump", true);
+        animator.SetBool("Attack", false);
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -59,6 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("Jump", false);
             animator.SetBool("Grounded", true);
+            isGrounded = true;
         }
     }
 }
