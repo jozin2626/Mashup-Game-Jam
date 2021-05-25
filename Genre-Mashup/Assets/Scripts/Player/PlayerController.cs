@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         floorCollider = GetComponent<CircleCollider2D>();
         ceilingCollider = GetComponent<BoxCollider2D>();
+        FindObjectOfType<AudioManager>().Play("Level Music");
         InvokeRepeating("Jump", initialJumpDelay, jumpTiming);
     }
 
