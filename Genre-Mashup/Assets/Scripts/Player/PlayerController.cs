@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private Vector2 movement = new Vector2();
     private int playerHealth = 3;
+    public GameObject heart1, heart2, heart3;
     private bool isGrounded;
     private Rigidbody2D rb;
     private CircleCollider2D floorCollider;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
+            FindObjectOfType<AudioManager>().Play("Hammer");
             animator.SetBool("Attack", true);
             Invoke("StopAttack", 0.4f);
         }
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        FindObjectOfType<AudioManager>().Play("Jump");
         animator.SetBool("Grounded", false);
         animator.SetBool("Jump", true);
         animator.SetBool("Attack", false);
@@ -64,11 +67,22 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Spikes") || collision.gameObject.CompareTag("Enemy"))
         {
-            if (playerHealth > 1)
+            if (playerHealth == 3)
             {
                 playerHealth--;
+                heart3.SetActive(false);
+            }
+            else if (playerHealth == 2)
+            {
+                playerHealth--;
+                heart2.SetActive(false);
+            }
+            else if (playerHealth == 1)
+            {
+                heart1.SetActive(false);
+                Invoke("GameOver", 2f);
             }
         }
 
@@ -78,5 +92,10 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Grounded", true);
             isGrounded = true;
         }
+    }
+
+    private void GameOver()
+    {
+
     }
 }

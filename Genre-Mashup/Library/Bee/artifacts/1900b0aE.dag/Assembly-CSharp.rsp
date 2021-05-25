@@ -342,6 +342,7 @@
 "Assets/Scripts/Misc/CameraFollow.cs"
 "Assets/Scripts/Misc/Parallax.cs"
 "Assets/Scripts/Misc/Sound.cs"
+"Assets/Scripts/Misc/StartButton.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 -langversion:8.0
 

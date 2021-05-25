@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Platform
+  - Button
+  - Spikes
   layers:
   - Default
   - TransparentFX
