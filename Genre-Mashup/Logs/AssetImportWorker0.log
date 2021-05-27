@@ -15,11 +15,11 @@ D:/Users/justin/Unity Projects/Mashup-Game-Jam/Genre-Mashup
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50124
+51999
 Successfully changed project path to: D:/Users/justin/Unity Projects/Mashup-Game-Jam/Genre-Mashup
 D:/Users/justin/Unity Projects/Mashup-Game-Jam/Genre-Mashup
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 91.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 97.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.5f1 (3737af19df53)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
@@ -35,321 +35,647 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56484
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001644 seconds.
+Registered in 0.001569 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 95.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 100.02 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.148 seconds
+- Completed reload, in  1.205 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002399 seconds.
+Registered in 0.002449 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 94.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 100.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.052 seconds
+- Completed reload, in  1.116 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3375 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.0 MB.
-System memory in use after: 128.1 MB.
+Unloading 3376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.1 MB.
+System memory in use after: 128.2 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3828.
-Total: 2.276800 ms (FindLiveObjects: 0.238900 ms CreateObjectMapping: 0.153400 ms MarkObjects: 1.790100 ms  DeleteObjects: 0.093600 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3830.
+Total: 2.572700 ms (FindLiveObjects: 0.261100 ms CreateObjectMapping: 0.192900 ms MarkObjects: 2.027500 ms  DeleteObjects: 0.090100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sounds/print('HelloWorld')FULL.wav
-  artifactKey: Guid(6fccbf44b5f84934c8e34e5d851b6a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/print('HelloWorld')FULL.wav using Guid(6fccbf44b5f84934c8e34e5d851b6a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3deba3c75b04b6659e992942052720c0') in 0.099036 seconds 
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'b39d3c59b54fca2111ade7fe70e07461') in 0.096917 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 106.126311 seconds.
-  path: Assets/Scripts/Player/PlayerController.cs
-  artifactKey: Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerController.cs using Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3ccec0e26b0504d462dbd843e0b101') in 0.024884 seconds 
+  Time since last request: 5.228339 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'fdac7c0c33e4a6f97475f75b5a551f45') in 0.010642 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 50.462464 seconds.
-  path: Assets/Scripts/Player/PlayerController.cs
-  artifactKey: Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerController.cs using Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f835aca9c431d4a6d144071d87073da') in 0.002561 seconds 
+  Time since last request: 2.477463 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'f1b22277c5df6effd204185d21911188') in 0.010690 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.005061 seconds.
-  path: Assets/Scripts/Player/PlayerController.cs
-  artifactKey: Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerController.cs using Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c199f10d81619f4199ea464aa113f00') in 0.001677 seconds 
+  Time since last request: 3.276386 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '0a7f81e6ac179f7103cdc7c1072c3126') in 0.010652 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.880127 seconds.
-  path: Assets/Scripts/Player/PlayerController.cs
-  artifactKey: Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerController.cs using Guid(52daff34ec96df346a3f10734f260482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea29e5ddf94cdfa29acdbe164ebb907') in 0.001579 seconds 
+  Time since last request: 45.403897 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '25f8b1d01d5e41715e6fb3edb3002552') in 0.011906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.682135 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'c11c1976c2abfae12ec4917119310699') in 0.010059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.903465 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '11d80d7eebb4e2c404143894d9633519') in 0.009873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.964187 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'ceedfa7bef0920134c3d93cec345c4a9') in 0.012480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.877124 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '031278f18f9988753c3dd83441ed8fa2') in 0.009749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.076983 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'd34f30264dbb12d6386a0a0992f68137') in 0.009709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.258249 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '8d307a9077dc155b4fdc6ec32ea74a3d') in 0.010587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.442886 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'd97bbc590db7a3d3c9461fa6ae5fdefd') in 0.009765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.088146 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '3a6f2e3a720bf17a85139d13eb7aca5d') in 0.009515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.877794 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '30f77ecc93ceed7ffd288d34e9a5a706') in 0.009451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.710177 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '72e862c10bdabd76a9ef2a42cafc0b24') in 0.012462 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002421 seconds.
+Registered in 0.002289 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.023 seconds
+- Completed reload, in  0.923 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.5 MB.
-System memory in use after: 131.7 MB.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.9 MB.
+System memory in use after: 132.0 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3841.
-Total: 3.091000 ms (FindLiveObjects: 0.282300 ms CreateObjectMapping: 0.158000 ms MarkObjects: 2.443100 ms  DeleteObjects: 0.198600 ms)
+Total: 2.789800 ms (FindLiveObjects: 0.270700 ms CreateObjectMapping: 0.227600 ms MarkObjects: 2.211900 ms  DeleteObjects: 0.078500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002612 seconds.
+Registered in 0.002324 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.943 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.6 MB.
-System memory in use after: 131.7 MB.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.910 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.9 MB.
+System memory in use after: 132.0 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3845.
-Total: 2.730600 ms (FindLiveObjects: 0.253500 ms CreateObjectMapping: 0.171300 ms MarkObjects: 2.219500 ms  DeleteObjects: 0.085100 ms)
+Total: 2.446800 ms (FindLiveObjects: 0.256300 ms CreateObjectMapping: 0.182400 ms MarkObjects: 1.931900 ms  DeleteObjects: 0.075100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002329 seconds.
+Registered in 0.002370 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.926 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.6 MB.
-System memory in use after: 131.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3849.
-Total: 2.152600 ms (FindLiveObjects: 0.242000 ms CreateObjectMapping: 0.160300 ms MarkObjects: 1.678300 ms  DeleteObjects: 0.071100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002331 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.857 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.6 MB.
-System memory in use after: 131.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3853.
-Total: 2.528400 ms (FindLiveObjects: 0.255200 ms CreateObjectMapping: 0.163200 ms MarkObjects: 2.026300 ms  DeleteObjects: 0.083000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002352 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.867 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.6 MB.
-System memory in use after: 131.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3857.
-Total: 2.398300 ms (FindLiveObjects: 0.242100 ms CreateObjectMapping: 0.156300 ms MarkObjects: 1.923200 ms  DeleteObjects: 0.076000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003923 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.911 seconds
+- Completed reload, in  0.891 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.7 MB.
-System memory in use after: 131.8 MB.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.9 MB.
+System memory in use after: 132.1 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3861.
-Total: 2.254600 ms (FindLiveObjects: 0.247700 ms CreateObjectMapping: 0.161400 ms MarkObjects: 1.768800 ms  DeleteObjects: 0.075900 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3849.
+Total: 2.321600 ms (FindLiveObjects: 0.261200 ms CreateObjectMapping: 0.196000 ms MarkObjects: 1.791200 ms  DeleteObjects: 0.072000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1152.571857 seconds.
-  path: Assets/Sprites/Envronment-UI/full heart.png
-  artifactKey: Guid(5d5c1e8e44c39374895f8f539d7ad49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Envronment-UI/full heart.png using Guid(5d5c1e8e44c39374895f8f539d7ad49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8798f32cd4f90f6bd5909b7ed0b98f') in 0.067295 seconds 
+  Time since last request: 505.692885 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(7ed55e5c97c7b6d4884e6cd8a1221f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'player_fall -> player_fall' in state 'player_fall' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '1c995d6bc4beff4fb113aa88f0b39e41') in 0.053057 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.376730 seconds.
-  path: Assets/Sprites/Envronment-UI/null heart.png
-  artifactKey: Guid(6533785a72a38d749a3ca791eaeac094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Envronment-UI/null heart.png using Guid(6533785a72a38d749a3ca791eaeac094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4032999bca226fdc18d5e74337feb2f2') in 0.013862 seconds 
+  Time since last request: 64.405750 seconds.
+  path: Assets/Sprites/Envronment-UI/Boombox shoot-Sheet.png
+  artifactKey: Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Envronment-UI/Boombox shoot-Sheet.png using Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a72c84cb0305d4872585eac10562b9') in 0.034068 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.113809 seconds.
-  path: Assets/Sprites/Envronment-UI/null heart.png
-  artifactKey: Guid(6533785a72a38d749a3ca791eaeac094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Envronment-UI/null heart.png using Guid(6533785a72a38d749a3ca791eaeac094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17bc070f88a800470e1e992352bd610') in 0.010305 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.925697 seconds.
-  path: Assets/Sprites/Envronment-UI/full heart.png
-  artifactKey: Guid(5d5c1e8e44c39374895f8f539d7ad49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Envronment-UI/full heart.png using Guid(5d5c1e8e44c39374895f8f539d7ad49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4783f6b8ec0b38b8329a8bd9e6301f8') in 0.026096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.982371 seconds.
-  path: Assets/Sprites/Envronment-UI/null heart.png
-  artifactKey: Guid(6533785a72a38d749a3ca791eaeac094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Envronment-UI/null heart.png using Guid(6533785a72a38d749a3ca791eaeac094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09564f2c0353991f2e27f9897199fffc') in 0.039731 seconds 
+  Time since last request: 0.000224 seconds.
+  path: Assets/Sprites/Envronment-UI/boombox sprite-Sheet.png
+  artifactKey: Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Envronment-UI/boombox sprite-Sheet.png using Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72385a42d8ff8c520917ad1e3959033e') in 0.012482 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002318 seconds.
+Registered in 0.002244 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.858 seconds
+- Completed reload, in  0.902 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3372 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.9 MB.
+System memory in use after: 133.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3889.
+Total: 2.457000 ms (FindLiveObjects: 0.303900 ms CreateObjectMapping: 0.234600 ms MarkObjects: 1.845100 ms  DeleteObjects: 0.072200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.327331 seconds.
+  path: Assets/Sprites/Enemy
+  artifactKey: Guid(4399a55bc38deb3478630b55b01b1afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy using Guid(4399a55bc38deb3478630b55b01b1afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb10b91a8011e10eb8fbeefd8205e770') in 0.007640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 269.591313 seconds.
+  path: Assets/Scenes/Main Menu.unity
+  artifactKey: Guid(0656487c02de4ed488f345d775ae9c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu.unity using Guid(0656487c02de4ed488f345d775ae9c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df89eec4a14bb088f10302c620a5f7d7') in 0.012216 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002321 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.846 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3371 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.8 MB.
-System memory in use after: 133.9 MB.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.8 MB.
+System memory in use after: 133.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3941.
-Total: 2.407500 ms (FindLiveObjects: 0.256600 ms CreateObjectMapping: 0.155300 ms MarkObjects: 1.885600 ms  DeleteObjects: 0.109300 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3893.
+Total: 2.511500 ms (FindLiveObjects: 0.251600 ms CreateObjectMapping: 0.170300 ms MarkObjects: 2.001700 ms  DeleteObjects: 0.086900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002516 seconds.
+Registered in 0.002227 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.873 seconds
+- Completed reload, in  0.838 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.9 MB.
+System memory in use after: 133.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3897.
+Total: 2.350200 ms (FindLiveObjects: 0.246500 ms CreateObjectMapping: 0.156800 ms MarkObjects: 1.872500 ms  DeleteObjects: 0.073800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002243 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.7 MB.
-System memory in use after: 133.8 MB.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.9 MB.
+System memory in use after: 133.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3945.
-Total: 2.676000 ms (FindLiveObjects: 0.281700 ms CreateObjectMapping: 0.182000 ms MarkObjects: 2.127000 ms  DeleteObjects: 0.083900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002373 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.860 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.7 MB.
-System memory in use after: 133.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3949.
-Total: 12.808100 ms (FindLiveObjects: 0.330200 ms CreateObjectMapping: 0.898200 ms MarkObjects: 11.486700 ms  DeleteObjects: 0.091300 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3901.
+Total: 2.341000 ms (FindLiveObjects: 0.247900 ms CreateObjectMapping: 0.159800 ms MarkObjects: 1.858800 ms  DeleteObjects: 0.073700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 391.835678 seconds.
-  path: Assets/Prefabs/Health.prefab
-  artifactKey: Guid(35ef0e6d58b5d3d4cba831bbbe497170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Health.prefab using Guid(35ef0e6d58b5d3d4cba831bbbe497170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38191348d03677debf735d2543e5bf5') in 0.055685 seconds 
+  Time since last request: 221.089589 seconds.
+  path: Assets/Scenes/Level.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e6376e2d727c1ff605b256905b20d4') in 0.011653 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002327 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.871 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.8 MB.
-System memory in use after: 133.9 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3954.
-Total: 2.316200 ms (FindLiveObjects: 0.240400 ms CreateObjectMapping: 0.148300 ms MarkObjects: 1.855800 ms  DeleteObjects: 0.071100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002250 seconds.
+Registered in 0.002268 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.863 seconds
+- Completed reload, in  0.840 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.9 MB.
+System memory in use after: 133.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3905.
+Total: 2.325700 ms (FindLiveObjects: 0.239000 ms CreateObjectMapping: 0.152300 ms MarkObjects: 1.810400 ms  DeleteObjects: 0.123000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002208 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.842 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.8 MB.
-System memory in use after: 133.9 MB.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.9 MB.
+System memory in use after: 133.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3958.
-Total: 2.278500 ms (FindLiveObjects: 0.238600 ms CreateObjectMapping: 0.148600 ms MarkObjects: 1.820100 ms  DeleteObjects: 0.070500 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3909.
+Total: 2.275200 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.168000 ms MarkObjects: 1.781300 ms  DeleteObjects: 0.074100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002357 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.9 MB.
+System memory in use after: 133.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3913.
+Total: 2.247000 ms (FindLiveObjects: 0.223800 ms CreateObjectMapping: 0.136900 ms MarkObjects: 1.776100 ms  DeleteObjects: 0.109100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 347.169084 seconds.
+  path: Assets/Sprites/Enemy/boombox sprite-Sheet.png
+  artifactKey: Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy/boombox sprite-Sheet.png using Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72aac554fd96aeb5deae4819499d53a') in 0.038392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.822915 seconds.
+  path: Assets/Scenes/Test Scene.unity
+  artifactKey: Guid(070757090ac7aca478031c07a14ca9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test Scene.unity using Guid(070757090ac7aca478031c07a14ca9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd869fb19b6869720b903090708c7f3e2') in 0.002058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 918.661483 seconds.
+  path: Assets/Sprites/Enemy/Boombox shoot-Sheet.png
+  artifactKey: Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy/Boombox shoot-Sheet.png using Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6fd5023d1fcdbc2c947b17f7721a92f') in 0.011381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.243901 seconds.
+  path: Assets/Sprites/Enemy/boombox sprite-Sheet.png
+  artifactKey: Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy/boombox sprite-Sheet.png using Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1cd718648e758f92b309b570199f12') in 0.029404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.325656 seconds.
+  path: Assets/Sprites/Enemy/Boombox shoot-Sheet.png
+  artifactKey: Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy/Boombox shoot-Sheet.png using Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f8f4fdee4398938f1822e33c622ac7') in 0.080296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.761172 seconds.
+  path: Assets/Sprites/Enemy/boombox sprite-Sheet.png
+  artifactKey: Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy/boombox sprite-Sheet.png using Guid(89ec96e1d27a3254bae488e2d1588d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4655e1a0a5513c2e109051ddaf5240c') in 0.018880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.191491 seconds.
+  path: Assets/Sprites/Enemy/Boombox shoot-Sheet.png
+  artifactKey: Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy/Boombox shoot-Sheet.png using Guid(0f897546fe7a1314ab1b9771805d52c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442341661281866a48275d65c9c9e535') in 0.294587 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002442 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.845 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.3 MB.
+System memory in use after: 135.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4004.
+Total: 2.433000 ms (FindLiveObjects: 0.248500 ms CreateObjectMapping: 0.158700 ms MarkObjects: 1.934600 ms  DeleteObjects: 0.090600 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
