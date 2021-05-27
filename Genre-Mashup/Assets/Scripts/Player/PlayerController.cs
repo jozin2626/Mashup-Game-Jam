@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpTiming;
     [SerializeField] private float initialJumpDelay;
     public Animator animator;
+    private SpriteRenderer renderer;
     private Vector2 movement = new Vector2();
     private int playerHealth = 3;
     public GameObject heart1, heart2, heart3;
+    public GameObject deathParticles;
     private bool isGrounded;
     private Rigidbody2D rb;
     private CircleCollider2D floorCollider;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         floorCollider = GetComponent<CircleCollider2D>();
         ceilingCollider = GetComponent<BoxCollider2D>();
+        renderer = GetComponent<SpriteRenderer>();
         FindObjectOfType<AudioManager>().Play("Level Music");
         InvokeRepeating("Jump", initialJumpDelay, jumpTiming);
     }
@@ -81,7 +84,10 @@ public class PlayerController : MonoBehaviour
             }
             else if (playerHealth == 1)
             {
+                deathParticles.SetActive(true);
                 heart1.SetActive(false);
+                renderer.enabled = false;
+                CancelInvoke("Jump");
                 Invoke("GameOver", 2f);
             }
         }
