@@ -4455,6 +4455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9df0214aad0dd04dbdbef4f3b716c79, type: 3}
+--- !u!4 &897652733 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7395982591054322828, guid: 7ed55e5c97c7b6d4884e6cd8a1221f04, type: 3}
+  m_PrefabInstance: {fileID: 1667308341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &900391216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4971,6 +4976,10 @@ PrefabInstance:
       propertyPath: jumpTiming
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2654132477272217406, guid: 7ed55e5c97c7b6d4884e6cd8a1221f04, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 897652733}
     - target: {fileID: 2654132477272217406, guid: 7ed55e5c97c7b6d4884e6cd8a1221f04, type: 3}
       propertyPath: initialJumpDelay
       value: 0

@@ -10,18 +10,11 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("Attack", 0.9f, 0f);
+        InvokeRepeating("Attack", 0f, 2f);
     }
 
     private void Attack()
     {
-        
         Instantiate(bullet);
-        /*RaycastHit2D hitInfo = Physics2D.Raycast(firePoint.position, firePoint.right);
-
-        if (hitInfo)
-        {
-
-        }*/
     }
 }
