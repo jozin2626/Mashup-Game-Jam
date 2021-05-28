@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpTiming;
     [SerializeField] private float initialJumpDelay;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
+    public Transform attackPoint;
     public Animator animator;
     private SpriteRenderer renderer;
     private Vector2 movement = new Vector2();
@@ -44,6 +47,12 @@ public class PlayerController : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Hammer");
             animator.SetBool("Attack", true);
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            foreach(Collider2D enemy in hitEnemies)
+            {
+                Debug.Log("hit enemy");
+            }
             Invoke("StopAttack", 0.4f);
         }
     }
@@ -51,6 +60,16 @@ public class PlayerController : MonoBehaviour
     private void StopAttack()
     {
         animator.SetBool("Attack", false);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     private void FixedUpdate()
